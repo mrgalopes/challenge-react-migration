@@ -13,9 +13,9 @@ type IconProps = {
   size: number;
 }
 
-type InputProps = {
+type InputProps = React.HTMLProps<HTMLInputElement> & {
   name: string;
-  icon: React.FC<IconProps>;
+  icon?: React.FC<IconProps>;
 }
 
 const Input = ({ name, icon: Icon, ...rest }: InputProps) => {
