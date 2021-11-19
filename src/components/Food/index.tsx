@@ -3,15 +3,8 @@ import { FiEdit3, FiTrash } from 'react-icons/fi';
 
 import { Container } from './styles';
 import api from '../../services/api';
+import { FoodType } from '../../types/food';
 
-export type FoodType = {
-  id: number;
-  available: boolean;
-  name: string;
-  image: string;
-  description: string;
-  price: string;
-}
 
 type FoodProps = {
   food: FoodType,
